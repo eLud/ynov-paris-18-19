@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBAction func validate(_ sender: Any) {
 
         let selectedSegmentIndex = dishTypeSegmentedControl.selectedSegmentIndex
-        guard let type = dishTypeSegmentedControl.titleForSegment(at: selectedSegmentIndex) else { return }
+        guard let type = DishType(rawValue: selectedSegmentIndex) else { fatalError("Can't match selectedSegmentIndex with DishType rawValue") }
 
         guard let name = dishNameTextField.text, name.count > 2 else { return }
         guard let price = dishPriceTextField.text, let floatPrice = Float(price) else { return }

@@ -475,4 +475,21 @@ guard let first = items[0] as? Int else { fatalError() }
 first * 2
 
 
+enum TrainStatus {
+    case onTime
+    case delayed(delay: Int)
+    case cancelled(reason: String?, substitutionMessage: String)
+    case unknwown
+}
+
+var status = TrainStatus.onTime
+status = .delayed(delay: 5)
+status = .delayed(delay: 15)
+status = .unknwown
+status = .cancelled(reason: nil, substitutionMessage: "")
+
+
+
+
+
 
