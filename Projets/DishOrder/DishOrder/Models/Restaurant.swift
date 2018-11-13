@@ -13,7 +13,9 @@ class Restaurant {
     var address: String
     var menu: [Dish]
 
-    init(name: String, address: String, menu: Dish) {
-
+    init(name: String, address: String, menu: [Dish] = []) {
+        self.name = name
+        self.address = address
+        self.menu = menu
     }
 }

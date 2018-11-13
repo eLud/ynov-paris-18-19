@@ -18,8 +18,6 @@ class ViewController: UIViewController {
 
     @IBAction func validate(_ sender: Any) {
 
-        let pizza = Dish(name: "Pizza", price: 8)
-
     }
 }
 

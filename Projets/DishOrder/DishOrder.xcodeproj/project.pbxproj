@@ -39,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334064A8219ADB7300A429C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				339EEFB02199E20A009383D1 /* Restaurant.swift */,
+				339EEFB22199E218009383D1 /* Dish.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		334064A9219ADC0700A429C6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				339EEFA02199E1EF009383D1 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		339EEF922199E1EE009383D1 = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				339EEF9E2199E1EF009383D1 /* AppDelegate.swift */,
-				339EEFA02199E1EF009383D1 /* ViewController.swift */,
-				339EEFB02199E20A009383D1 /* Restaurant.swift */,
-				339EEFB22199E218009383D1 /* Dish.swift */,
+				334064A9219ADC0700A429C6 /* ViewControllers */,
+				334064A8219ADB7300A429C6 /* Models */,
 				339EEFA22199E1EF009383D1 /* Main.storyboard */,
 				339EEFA52199E1F0009383D1 /* Assets.xcassets */,
 				339EEFA72199E1F0009383D1 /* LaunchScreen.storyboard */,

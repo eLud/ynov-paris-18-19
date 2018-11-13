@@ -9,7 +9,14 @@
 import Foundation
 
 struct Dish {
-    var name: String
-    var price: Float
 
+    let type: String
+    
+    let name: String
+    var price: Float
+    var dishDescription: String
+    var pictureURL: String
+
+    var allergens: [String]?
+    var calories: Int?
 }
