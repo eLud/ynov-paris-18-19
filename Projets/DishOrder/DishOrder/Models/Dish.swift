@@ -19,4 +19,15 @@ struct Dish {
 
     var allergens: [String]?
     var calories: Int?
+
+    init(type: String, name: String, price: Float, description: String, imageURL: String, allergens: [String]? = nil, calories: Int? = nil) {
+
+        self.type = type
+        self.name = name
+        self.price = price
+        dishDescription = description
+        pictureURL = imageURL
+        self.allergens = allergens
+        self.calories = calories
+    }
 }

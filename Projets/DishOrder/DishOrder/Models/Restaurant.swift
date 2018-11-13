@@ -11,11 +11,19 @@ import Foundation
 class Restaurant {
     var name: String
     var address: String
-    var menu: [Dish]
+    private var menu: [Dish]
 
     init(name: String, address: String, menu: [Dish] = []) {
         self.name = name
         self.address = address
         self.menu = menu
+    }
+
+    func addToMenu(_ dish: Dish) {
+        menu.append(dish)
+    }
+
+    var allDishes: [Dish] {
+        return menu
     }
 }
